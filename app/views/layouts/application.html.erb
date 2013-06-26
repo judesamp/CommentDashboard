@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %></title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<header>
+  <section> 
+    <div id="title"> 
+    <h1><%= title %></h1>
+    <h2><%= subtitle %></h2>
+  </div>
+  </section>
+</header>
+
+<%= yield %>
+
+</body>
+</html>
