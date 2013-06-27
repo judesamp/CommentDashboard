@@ -1,0 +1,7 @@
+<h3>Track a new blog</h3>
+<%= render 'form' %>
+<% recent_blogs.each do |blog| %>
+<ul>
+<li><%= link_to blog.title, blog_path(blog) %></i>
+</ul>
+<% end %>
